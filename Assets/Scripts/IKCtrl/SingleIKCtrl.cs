@@ -13,8 +13,7 @@ public class SingleIKCtrl : MonoBehaviour {
 		animator = this.GetComponent<Animator>();
 	}
 
-	void OnAnimatorIK()
-	{
+	void OnAnimatorIK() {
 		if (animator != null) {
 			if (activateIK && goalTarget != null) {
 				setIKWeight(1.0f);
