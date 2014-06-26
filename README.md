@@ -1,15 +1,26 @@
 UniMotion
 =========
 
-Simple unified API for using various motion controllers in Unity3D
+Simple unified API for using various trackers and motion controllers in Unity3D.
+UniMotion is a project intented to provide unified motion tracking for multiple input devices.
+This support is divided in 2 different abstract classes:
+- UM_Tracker: Provides an abstract class to be extended to support a new tracking device.
+- UM_Controller: Derived from the Tracker class, provides additional function prototypes for controllers such as buttons and trigger input.
 
-UniMotion is a project intented to provide unified motion tracking for multiple input devices. 
-First supported input devices will be:
+Currently supported devices are:
+
+- FreeTrack
+
+Planned supported devices are:
 
 - PlayStation Move
-
+- Razer Hydra
 - WiiMote plus (we need gyro input)
 
+
+UniMotion-FreeTrack
+-------------------
+UniMotion FreeTrack support. Provides the FreeTrack implementation of the UM_Tracker class. It can be used in conjuntion with FreePIE and Android devices since it provides additional modes for Landscape and Portrait alignment.
 
 
 UniMotion-PS
